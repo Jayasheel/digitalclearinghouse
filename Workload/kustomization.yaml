@@ -1,0 +1,8 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: gx-lab
+
+resources:
+  - workload-envoy-cm.yaml
+  - gx-workload.yaml
+
