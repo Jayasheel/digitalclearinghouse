@@ -1,0 +1,28 @@
+Installation Process:
+
+Edit all the File before deploying for the following:
+
+
+Clustername: Change "kind-cluster" to your cluster name
+Namespace: If you are using other namespace than gx-lab then change accordingly in all the files.
+
+0. Create Spire infra and register identities
+	$ kubectl apply -f Spire
+	$ sh Spire/create-node-registration-entry.sh
+
+1. Create gx-lab namespace
+$ kubectl create -f gx-lab-ns.yaml
+
+2. Create Mongodb database
+
+	$ kubectl apply -k Mongo
+   
+   Create the collections and users
+   	$ sh ./Mongo/configmongo.sh
+
+3. Create Registry service
+
+	$ kubectl apply -k Registry
+
+4. Create Compliance service
+	$ kubectl apply -k Compliance
