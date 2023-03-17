@@ -75,7 +75,7 @@ data:
         address:
           socket_address:
             address: 127.0.0.1
-            port_value: 3001
+            port_value: 4000
         filter_chains:
         - filters:
           - name: envoy.http_connection_manager
@@ -109,12 +109,12 @@ data:
           - pipe:
               path: /run/spire/sockets/agent.sock
       - name: local_service
-        connect_timeout: 1s
+        connect_timeout: 0.25s
         type: strict_dns
         hosts:
           - socket_address:
               address: 127.0.0.1
-              port_value: 4000
+              port_value: 3000
       - name: registry
         connect_timeout: 0.25s
         type: strict_dns
