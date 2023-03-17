@@ -1,0 +1,98 @@
+Found 9 entries
+Entry ID         : 56e6b748-4302-49a2-9f45-d11692e455db
+SPIFFE ID        : spiffe://example.org/ns/default/sa/default/backend
+Parent ID        : spiffe://example.org/ns/spire/sa/spire-agent
+Revision         : 0
+X509-SVID TTL    : default
+JWT-SVID TTL     : default
+Selector         : k8s:container-name:envoy
+Selector         : k8s:ns:default
+Selector         : k8s:pod-label:app:backend
+Selector         : k8s:sa:default
+
+Entry ID         : 928a9d6c-d06d-4e5f-b0de-318c22d9f7e4
+SPIFFE ID        : spiffe://example.org/ns/default/sa/default/frontend
+Parent ID        : spiffe://example.org/ns/spire/sa/spire-agent
+Revision         : 0
+X509-SVID TTL    : default
+JWT-SVID TTL     : default
+Selector         : k8s:container-name:envoy
+Selector         : k8s:ns:default
+Selector         : k8s:pod-label:app:frontend
+Selector         : k8s:sa:default
+
+Entry ID         : 82c0f7bf-c605-4497-b65b-d0b13d39f386
+SPIFFE ID        : spiffe://example.org/ns/default/sa/default/frontend-2
+Parent ID        : spiffe://example.org/ns/spire/sa/spire-agent
+Revision         : 0
+X509-SVID TTL    : default
+JWT-SVID TTL     : default
+Selector         : k8s:container-name:envoy
+Selector         : k8s:ns:default
+Selector         : k8s:pod-label:app:frontend-2
+Selector         : k8s:sa:default
+
+Entry ID         : de084566-670a-4ac5-ad35-e1a201751a41
+SPIFFE ID        : spiffe://example.org/ns/gx-lab/sa/default/gx-compliance-server-main
+Parent ID        : spiffe://example.org/ns/spire/sa/spire-agent
+Revision         : 0
+X509-SVID TTL    : default
+JWT-SVID TTL     : default
+Selector         : k8s:container-name:envoy
+Selector         : k8s:ns:gx-lab
+Selector         : k8s:pod-label:app:gx-compliance-main
+Selector         : k8s:sa:default
+
+Entry ID         : c53ac9b5-5777-4ce4-b2d2-5a8823720116
+SPIFFE ID        : spiffe://example.org/ns/gx-lab/sa/default/gx-registry-server-main
+Parent ID        : spiffe://example.org/ns/spire/sa/spire-agent
+Revision         : 0
+X509-SVID TTL    : default
+JWT-SVID TTL     : default
+Selector         : k8s:container-name:envoy
+Selector         : k8s:ns:gx-lab
+Selector         : k8s:pod-label:app:gx-registry-server-main
+Selector         : k8s:sa:default
+
+Entry ID         : 7c185737-3aeb-406a-a040-50f4ef5b0a02
+SPIFFE ID        : spiffe://example.org/ns/gx-lab/sa/default/gx-workload
+Parent ID        : spiffe://example.org/ns/spire/sa/spire-agent
+Revision         : 0
+X509-SVID TTL    : default
+JWT-SVID TTL     : default
+Selector         : k8s:container-name:envoy
+Selector         : k8s:ns:gx-lab
+Selector         : k8s:pod-label:app:gx-workload
+Selector         : k8s:sa:default
+
+Entry ID         : 9e7155fa-6f42-420c-be26-d3a931021bf2
+SPIFFE ID        : spiffe://example.org/ns/gx-lab/sa/default/registry
+Parent ID        : spiffe://example.org/ns/spire/sa/spire-agent
+Revision         : 0
+X509-SVID TTL    : default
+JWT-SVID TTL     : default
+Selector         : k8s:container-name:envoy
+Selector         : k8s:ns:gx-lab
+Selector         : k8s:pod-label:app:gx-registry-server-main
+Selector         : k8s:sa:default
+
+Entry ID         : 5d387bfc-7ef4-4667-967e-e6cca517e73d
+SPIFFE ID        : spiffe://example.org/ns/spire/sa/spire-agent
+Parent ID        : spiffe://example.org/spire/server
+Revision         : 0
+X509-SVID TTL    : default
+JWT-SVID TTL     : default
+Selector         : k8s_sat:agent_ns:spire
+Selector         : k8s_sat:agent_sa:spire-agent
+Selector         : k8s_sat:cluster:default
+
+Entry ID         : 2f884c2b-6faa-4bcc-a803-00ff69e2738a
+SPIFFE ID        : spiffe://example.org/ns/spire/sa/spire-agent
+Parent ID        : spiffe://example.org/spire/server
+Revision         : 0
+X509-SVID TTL    : default
+JWT-SVID TTL     : default
+Selector         : k8s_sat:agent_ns:spire
+Selector         : k8s_sat:agent_sa:spire-agent
+Selector         : k8s_sat:cluster:kind-spire
+
