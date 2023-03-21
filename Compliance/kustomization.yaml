@@ -8,4 +8,5 @@ resources:
   - gx-compliance-server-tls-secret.yaml
   - gx-compliance-server-deployment.yaml
   - gx-compliance-main-svc.yaml
+  - gx-compliance-main-svc-direct.yaml
 
