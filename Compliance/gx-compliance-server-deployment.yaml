@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: gx-compliance-main
-  namespace: gx-lab
+  namespace: gxdch
 spec:
   progressDeadlineSeconds: 600
   replicas: 1

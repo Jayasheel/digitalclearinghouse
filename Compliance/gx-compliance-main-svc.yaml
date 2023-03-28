@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: gx-compliance-main
-  namespace: gx-lab
+  namespace: gxdch
 spec:
   internalTrafficPolicy: Cluster
   ipFamilies:

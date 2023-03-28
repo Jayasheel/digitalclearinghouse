@@ -4,7 +4,7 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-prod
   name: gx-registry-live-server
-  namespace: gx-lab
+  namespace: gxdch
 spec:
   rules:
   - host: registry.gaia-x.eu

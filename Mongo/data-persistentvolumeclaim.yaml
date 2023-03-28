@@ -2,7 +2,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   creationTimestamp: null
-  namespace: gx-lab
+  namespace: gxdch
   labels:
     io.kompose.service: data
   name: data

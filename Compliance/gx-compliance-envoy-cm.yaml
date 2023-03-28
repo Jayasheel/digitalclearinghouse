@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: compliance-envoy
-  namespace: gx-lab
+  namespace: gxdch
 data:
   envoy.yaml: |
     node:
@@ -46,7 +46,7 @@ data:
           tls_context:
             common_tls_context:
               tls_certificate_sds_secret_configs:
-              - name: "spiffe://example.org/ns/gx-lab/sa/default/gx-compliance-server-main"
+              - name: "spiffe://example.org/ns/gxdch/sa/default/gx-compliance-server-main"
                 sds_config:
                   api_config_source:
                     api_type: GRPC
@@ -126,7 +126,7 @@ data:
         tls_context:
           common_tls_context:
             tls_certificate_sds_secret_configs:
-              - name: "spiffe://example.org/ns/gx-lab/sa/default/gx-compliance-server-main"
+              - name: "spiffe://example.org/ns/gxdch/sa/default/gx-compliance-server-main"
                 sds_config:
                   api_config_source:
                     api_type: GRPC
@@ -137,7 +137,7 @@ data:
               # validate the SPIFFE ID of the server (recommended)
               default_validation_context:
                 match_subject_alt_names:
-                  exact: "spiffe://example.org/ns/gx-lab/sa/default/gx-registry-server-main"
+                  exact: "spiffe://example.org/ns/gxdch/sa/default/gx-registry-server-main"
               validation_context_sds_secret_config:
                 name: "spiffe://example.org"
                 sds_config:
