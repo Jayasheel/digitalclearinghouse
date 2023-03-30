@@ -35,21 +35,11 @@ spec:
         - name: spire-agent-socket
           mountPath: /run/spire/sockets
           readOnly: true
-      - env:
-        - name: COMPLIANCE_URL
-          value: "http://127.0.0.1:3000"
+      - name: gx-workload
         image: alpine/curl
         imagePullPolicy: IfNotPresent
-        command: ["sh"]
-        args: ["-c", "while true; do echo hello; sleep 2000; done"]
-        name: gx-workload
-        ports:
-        - containerPort: 3000
-#         name: http-api
-          protocol: TCP
-        resources: {}
-        terminationMessagePath: /dev/termination-log
-        terminationMessagePolicy: File
+        command: ["/bin/sh"]
+        args: ["-c", "while true; do sleep 100; done"]
       volumes:
       - name: envoy-config
         configMap:
